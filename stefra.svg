@@ -1,101 +1,219 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
-<!--SFONDO-->
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="gradienteAnimato" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%">
-        <animate attributeName="stop-color" values="#ffffff; #00ff00; #00ffff; #ff00ff; #ffff00; #ff0000; #ffffff" dur="10s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%">
-        <animate attributeName="stop-color" values="#ff00ff; #ffff00; #00ffff; #00ff00; #ff0000; #ffffff; #ff00ff" dur="10s" repeatCount="indefinite"/>
-      </stop>
+    <linearGradient id="inputGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cccccc;stop-opacity:1" />
     </linearGradient>
-</defs>
-<path d="M0 0 C330 0 660 0 1000 0 C1000 330 1000 660 1000 1000 C670 1000 340 1000 0 1000 C0 670 0 340 0 0 Z" fill="url(#gradienteAnimato)" />
 
-<!--LA FORMA NERA-->
-<g transform="translate(0.000000,1000.000000) scale(0.100000,-0.100000)"
-fill="#000000ff" stroke="none">
-<path d="M5355 9103 c-209 -24 -466 -67 -635 -104 -643 -141 -912 -240 -1200
--443 -104 -73 -350 -317 -408 -406 -74 -112 -138 -258 -243 -553 -84 -237
--118 -322 -232 -582 -60 -137 -140 -326 -179 -420 -39 -93 -84 -196 -99 -227
--66 -131 -81 -199 -87 -378 -3 -137 0 -190 17 -305 26 -165 72 -354 108 -439
-56 -134 154 -257 275 -347 186 -138 349 -204 723 -294 142 -35 393 -55 673
--55 212 0 273 -3 270 -12 -5 -15 -92 -73 -235 -156 -196 -113 -236 -129 -247
--94 -8 23 -83 99 -129 130 l-37 25 -59 -27 c-32 -14 -66 -26 -75 -26 -9 0 -40
-14 -69 30 -68 38 -106 38 -149 2 -18 -15 -52 -36 -75 -46 -51 -23 -88 -61
--145 -151 -49 -77 -118 -230 -118 -262 0 -11 -8 -31 -19 -44 -36 -47 -53 -91
--48 -125 6 -35 -21 -82 -77 -133 -16 -15 -26 -35 -26 -52 0 -56 -36 -93 -66
--68 -12 10 -18 9 -31 -4 -14 -14 -13 -18 13 -41 39 -34 56 -32 112 12 27 21
-73 50 103 66 l54 28 55 -26 c30 -15 67 -34 82 -43 23 -15 30 -16 53 -3 37 20
-66 64 72 109 4 27 14 45 33 60 16 11 31 34 35 51 6 28 9 30 53 30 38 0 58 -7
-102 -37 30 -20 58 -41 62 -47 13 -18 -2 -76 -44 -176 -54 -130 -70 -156 -233
--385 -170 -239 -206 -298 -240 -398 -44 -133 -30 -352 27 -409 29 -29 46 -8
-52 66 6 68 12 78 32 51 58 -80 82 -73 99 26 9 56 28 67 66 35 17 -14 37 -26
-45 -26 17 0 44 51 44 86 0 60 122 252 153 241 6 -2 10 -28 8 -64 -2 -45 2 -64
-14 -77 9 -9 20 -16 25 -16 11 0 50 50 50 64 0 7 6 21 14 31 14 19 15 19 35 1
-31 -28 47 -14 71 61 27 83 34 91 60 75 29 -18 42 -15 78 19 72 67 158 294 211
-557 26 128 41 180 56 199 4 6 231 53 255 53 25 0 28 -5 44 -72 48 -211 82
--452 73 -526 -10 -89 -58 -295 -79 -336 -11 -23 -39 -66 -62 -96 -38 -49 -130
--200 -213 -350 -31 -56 -65 -156 -103 -310 -58 -232 -131 -441 -169 -484 -32
--34 -123 -97 -171 -115 -92 -36 -193 -96 -225 -134 -19 -22 -44 -69 -56 -104
--24 -73 -19 -86 40 -103 95 -29 680 -19 941 16 63 8 159 19 212 24 106 10 172
-26 188 46 6 6 13 35 17 63 3 28 10 51 15 51 6 0 23 -8 39 -17 24 -14 33 -15
-49 -5 26 16 40 15 60 -3 15 -13 22 -14 45 -3 23 10 28 10 36 -5 13 -22 57 -22
-82 0 18 17 20 16 49 -20 32 -40 49 -45 68 -22 16 19 49 19 56 0 8 -19 34 -19
-70 0 16 8 37 15 47 15 9 0 27 6 38 12 18 11 23 10 36 -10 20 -29 41 -28 73 3
-24 23 30 24 59 14 28 -10 36 -8 69 14 31 22 46 25 97 23 l60 -3 0 -114 c0
--125 6 -143 58 -183 45 -34 74 -44 196 -64 213 -34 797 -17 832 24 10 13 -20
-115 -55 182 -17 33 -96 109 -154 147 -25 17 -53 49 -73 83 l-31 56 16 46 c20
-56 20 145 1 382 -32 384 -78 499 -310 779 -48 57 -102 133 -122 169 -20 36
--50 88 -68 116 -70 108 -88 153 -81 206 5 33 1 68 -10 109 -21 76 -15 173 20
-326 14 61 29 118 32 127 8 21 38 20 115 -3 81 -25 171 -41 226 -41 38 0 45 -3
-54 -27 28 -74 41 -187 44 -383 l3 -205 42 -90 c23 -49 51 -114 61 -144 32 -90
-59 -106 79 -46 26 79 42 14 30 -126 -4 -51 -3 -107 1 -124 5 -16 9 -49 9 -72
-0 -23 6 -62 14 -85 8 -24 16 -56 18 -73 7 -67 77 -22 110 71 35 98 61 290 55
-404 -12 202 -52 365 -137 549 -66 146 -96 228 -143 401 -29 106 -33 134 -26
-175 19 120 3 197 -62 294 -56 84 -122 146 -268 250 -150 108 -219 166 -208
-177 4 4 71 1 150 -7 203 -20 447 -16 567 9 121 25 192 52 270 103 133 86 215
-185 330 399 40 74 83 150 95 170 34 54 91 178 114 250 115 349 120 1086 11
-1700 -92 517 -288 908 -610 1217 -196 188 -415 312 -726 413 -277 89 -405 134
--549 192 -228 92 -330 111 -490 91z m350 -684 c154 -11 290 -36 375 -68 168
--64 368 -208 565 -407 250 -251 396 -464 456 -663 38 -128 203 -427 279 -506
-117 -121 184 -331 184 -575 0 -135 -20 -236 -69 -347 -15 -34 -25 -74 -25
--104 0 -137 -53 -407 -105 -528 -99 -237 -290 -408 -549 -495 -182 -61 -350
--81 -772 -92 -250 -7 -262 -8 -274 -28 -24 -38 -97 -190 -131 -271 -18 -44
--48 -107 -68 -140 -40 -70 -134 -165 -188 -190 -178 -85 -368 -44 -495 107
--57 67 -85 117 -138 243 -23 55 -62 139 -87 188 l-45 87 -207 0 c-695 1 -972
-69 -1243 306 -109 96 -181 205 -238 361 -50 138 -70 272 -81 548 -6 138 -13
-281 -16 320 -14 192 60 468 156 577 15 18 47 71 69 118 22 47 65 137 96 200
-31 63 56 127 56 141 0 48 94 278 162 397 116 204 197 304 326 397 372 271 667
-368 1302 428 86 9 578 6 705 -4z m-2876 -4910 c-18 -11 -39 -11 -39 -1 0 14
-44 31 49 20 2 -6 -3 -14 -10 -19z"/>
-<path d="M4313 7401 c-103 -35 -201 -127 -274 -254 -115 -202 -163 -252 -350
--358 -269 -155 -373 -303 -386 -550 -5 -90 -2 -117 15 -175 40 -130 117 -221
-236 -279 182 -89 340 -88 529 3 176 85 284 184 382 352 71 123 115 240 151
-405 41 188 86 407 95 465 24 160 -53 331 -176 389 -56 26 -149 27 -222 2z"/>
-<path d="M5865 7402 c-22 -10 -61 -42 -87 -71 -101 -113 -116 -236 -60 -496
-95 -435 113 -497 180 -630 113 -227 287 -383 512 -461 83 -28 262 -27 350 4
-154 53 261 150 311 280 30 79 37 217 15 313 -44 196 -140 309 -386 453 -189
-111 -216 139 -345 359 -66 112 -149 195 -235 235 -75 35 -197 41 -255 14z"/>
-<path d="M5114 5945 c-16 -7 -49 -33 -73 -56 -81 -81 -111 -181 -71 -231 30
--39 66 -36 124 8 77 59 131 58 209 -1 79 -60 140 -39 140 49 0 77 -73 184
--155 227 -44 22 -127 24 -174 4z"/>
-<path d="M5115 5371 c-171 -20 -275 -151 -275 -345 0 -73 16 -149 68 -321 16
--55 33 -120 37 -145 11 -77 57 -243 76 -282 45 -89 138 -126 242 -97 93 25
-125 86 181 334 19 83 51 206 72 275 33 110 37 138 38 230 0 128 -24 199 -88
-265 -71 71 -202 103 -351 86z"/>
-</g>
-<!--VARIE OMBRE-->
-<path d="M0 0 C0.99 0.99 0.99 0.99 2 2 C3.155 2.309375 4.31 2.61875 5.5 2.9375 C9 4 9 4 11 7 C9.783125 6.7525 8.56625 6.505 7.3125 6.25 C3.77589342 5.78053895 3.25842403 5.82584467 0.125 7.9375 C-0.57625 8.618125 -1.2775 9.29875 -2 10 C-2.66 10 -3.32 10 -4 10 C-4.33 10.99 -4.66 11.98 -5 13 C-5.66 13 -6.32 13 -7 13 C-7.268125 13.598125 -7.53625 14.19625 -7.8125 14.8125 C-9.61092792 18.12539353 -11.03519313 19.65542612 -14.625 20.9375 C-17.19124685 21.7498001 -17.19124685 21.7498001 -17.8125 24.125 C-17.9053125 25.053125 -17.9053125 25.053125 -18 26 C-18.928125 26.12375 -18.928125 26.12375 -19.875 26.25 C-22.15303678 26.77341441 -22.15303678 26.77341441 -22.875 28.8125 C-24.93380407 32.81573014 -28.85854304 34.61951435 -33 36 C-33.13792969 36.60972656 -33.27585937 37.21945312 -33.41796875 37.84765625 C-34.23233075 40.85915599 -35.79953375 41.65662539 -38.3125 43.4375 C-41.81273344 46.01836833 -44.33660777 48.54745452 -47 52 C-48.33333333 52.66666667 -49.66666667 53.33333333 -51 54 C-51.45632812 54.92619141 -51.45632812 54.92619141 -51.921875 55.87109375 C-54.89723014 61.74634213 -61.90957334 65.93505534 -68 68 C-72.0211762 68.71780559 -75.00897381 68.66894268 -78.5 66.3125 C-80 64 -80 64 -80.5625 61.5625 C-79.7579058 57.89712644 -77.83018537 56.3584878 -75 54 C-74.34 54 -73.68 54 -73 54 C-72.79375 53.29875 -72.5875 52.5975 -72.375 51.875 C-70.84157905 48.6687562 -69.09946312 47.00528963 -66.4375 44.72265625 C-64.79752947 42.97650585 -64.79752947 42.97650585 -64.09375 40.17578125 C-62.81230392 36.45501101 -61.01463737 34.13766621 -58.5 31.125 C-57.7059375 30.15820312 -56.911875 29.19140625 -56.09375 28.1953125 C-55.05734375 27.10863281 -55.05734375 27.10863281 -54 26 C-53.34 26 -52.68 26 -52 26 C-51.79890625 25.46375 -51.5978125 24.9275 -51.390625 24.375 C-49.39665335 20.96956527 -46.66057299 18.63058499 -43.75 16 C-43.18925781 15.47921875 -42.62851562 14.9584375 -42.05078125 14.421875 C-38.55814104 11.22768211 -35.00407468 8.5237804 -31 6 C-30.71125 6.61875 -30.4225 7.2375 -30.125 7.875 C-29.06279958 10.13325765 -29.06279958 10.13325765 -27 12 C-23.43825049 12.59362492 -22.03991171 12.02314879 -18.875 10.1875 C-16.14855419 8.2228943 -16.14855419 8.2228943 -14.5625 6.53125 C-10.71776357 2.7634083 -5.59181661 -1.15125636 0 0 Z " fill="#51FBB6" transform="translate(304,640)"/>
-<path d="M0 0 C0.10957031 0.62648438 0.21914063 1.25296875 0.33203125 1.8984375 C0.49058594 2.71570313 0.64914062 3.53296875 0.8125 4.375 C0.96332031 5.18710937 1.11414063 5.99921875 1.26953125 6.8359375 C1.87544942 9.35820641 1.87544942 9.35820641 5 11 C6.03013277 12.64821244 7.03114628 14.31503702 8 16 C8.66 16.66 9.32 17.32 10 18 C10 18.99 10 19.98 10 21 C10.556875 21.226875 11.11375 21.45375 11.6875 21.6875 C14.62504721 23.35475652 16.61811438 25.61811438 19 28 C21.33946701 29.37615706 23.409984 30.13666133 26 31 C26.66 29.68 27.32 28.36 28 27 C28.62330118 31.98640944 28.12849769 34.32115103 25.0625 38.375 C21.31422505 42.96508611 21.31422505 42.96508611 18.1875 43.3125 C14.24541029 42.92602062 13.64237942 41.80752814 11 39 C7.89992799 37.79950593 7.89992799 37.79950593 5 37 C4.67 36.67 4.34 36.34 4 36 C-1.48939185 36.3229054 -4.58368411 37.81614436 -9 41 C-9.66 41 -10.32 41 -11 41 C-11.33 41.99 -11.66 42.98 -12 44 C-14.80219609 46.22901962 -17.04377255 47.79009641 -20.5625 48.5625 C-24.08862869 47.74877799 -25.66725885 45.66598988 -28 43 C-26.9375 41.5 -26.9375 41.5 -25 40 C-21.3125 39.8125 -21.3125 39.8125 -18 40 C-18.020625 38.741875 -18.04125 37.48375 -18.0625 36.1875 C-17.59101712 31.3978326 -15.71196926 29.18961545 -12.5 25.6875 C-7.97622674 20.616897 -7.32679899 17.46827427 -7.30078125 10.81640625 C-6.96299612 7.65350915 -4.00527094 0 0 0 Z " fill="#454646" transform="translate(300,605)"/>
-<path d="M0 0 C2.5 2.125 2.5 2.125 5 5 C6.78907135 6.55910357 8.6146469 8.06523138 10.44921875 9.5703125 C12 11 12 11 14 14 C14 14.99 14 15.98 14 17 C15.98 16.67 17.96 16.34 20 16 C19.67 16.66 19.34 17.32 19 18 C16.69 18 14.38 18 12 18 C12 18.66 12 19.32 12 20 C10.28985181 20.97243721 8.57893462 21.94355873 6.86328125 22.90625 C4.84770388 24.04916651 4.84770388 24.04916651 2.5 25.8125 C-1.33543072 27.63432959 -2.9634327 27.41279855 -7 26 C-16.34632835 17.62157621 -16.34632835 17.62157621 -17 12 C-16.5625 9.25 -16.5625 9.25 -16 7 C-16.99 6.34 -17.98 5.68 -19 5 C-17.7625 4.731875 -16.525 4.46375 -15.25 4.1875 C-12.56116325 3.53294955 -11.13911172 3.10960317 -8.9375 1.375 C-5.87862086 -0.79581745 -3.63826267 -0.51063336 0 0 Z " fill="#393A3A" transform="translate(372,556)"/>
-<path d="M0 0 C-0.3125 2.375 -0.3125 2.375 -1 5 C-1.99 5.66 -2.98 6.32 -4 7 C-4.33 7.99 -4.66 8.98 -5 10 C-5.66 10.28875 -6.32 10.5775 -7 10.875 C-9.29150599 11.8553382 -9.29150599 11.8553382 -9.75 14.625 C-9.8325 15.40875 -9.915 16.1925 -10 17 C-10.99 17 -11.98 17 -13 17 C-13 17.99 -13 18.98 -13 20 C-17.95569752 23.23197664 -21.99712761 24.61063454 -27.86328125 25.41015625 C-30.37433115 25.8525129 -30.37433115 25.8525129 -32 29 C-32.66 29 -33.32 29 -34 29 C-34.33 29.66 -34.66 30.32 -35 31 C-35 28.875 -35 28.875 -34 26 C-31.53852453 23.71039813 -28.76659158 21.89994843 -26 20 C-24.53793743 18.87985084 -23.07943011 17.75504167 -21.625 16.625 C-18.24615385 14 -18.24615385 14 -16 14 C-15.690625 13.1646875 -15.690625 13.1646875 -15.375 12.3125 C-13.49672031 9.15357507 -10.81151195 7.33295673 -8 5 C-7.67 4.01 -7.34 3.02 -7 2 C-4.39757586 0.35179805 -3.13751221 0 0 0 Z " fill="#333333" transform="translate(613,587)"/>
-<path d="M0 0 C2.375 1.25 2.375 1.25 4 3 C4 4.32 4 5.64 4 7 C3.24074219 7.03738281 2.48148438 7.07476563 1.69921875 7.11328125 C0.20841797 7.21189453 0.20841797 7.21189453 -1.3125 7.3125 C-2.79169922 7.39951172 -2.79169922 7.39951172 -4.30078125 7.48828125 C-7.24384457 8.04622813 -8.18182999 8.68540132 -10 11 C-9.3993994 3.67267267 -9.3993994 3.67267267 -7.8125 1 C-5.0673495 -0.51456579 -3.07990272 -0.37713094 0 0 Z " fill="#5A5A5A" transform="translate(634,562)"/>
-<path d="M0 0 C3.625 0.1875 3.625 0.1875 6.625 2.1875 C6.8125 4.8125 6.8125 4.8125 6.625 7.1875 C3.655 7.1875 0.685 7.1875 -2.375 7.1875 C-3.035 5.2075 -3.695 3.2275 -4.375 1.1875 C-3.375 0.1875 -3.375 0.1875 0 0 Z " fill="#414141" transform="translate(648.375,574.8125)"/>
-<path d="M0 0 C1.32 0 2.64 0 4 0 C4.66 1.65 5.32 3.3 6 5 C5.34 5 4.68 5 4 5 C4.04125 5.928125 4.0825 6.85625 4.125 7.8125 C4 11 4 11 2 14 C1.34 14 0.68 14 0 14 C0 9.38 0 4.76 0 0 Z " fill="#292929" transform="translate(658,591)"/>
-<!--SCRITTA NOME-->
-<text x="30" y="990" font-size="90" font-weight="bold" font-family="Impact, Haettenschweiler, 'Arial Black', sans-serif"
-      fill="#8B0000">
-  Stefano Francesco Monea
-</text>
+    <linearGradient id="outputGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#cccccc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="pulse">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="400" fill="#000000"/>
+  
+  <g id="grid" stroke="#333333" stroke-width="0.3" opacity="1">
+    <defs>
+      <pattern id="grid-pattern" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#333333" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+    <rect width="800" height="600" fill="url(#grid-pattern)"/>
+  </g>
+  
+  <g id="particles">
+    <circle cx="150" cy="120" r="1" fill="#ffffff" opacity="0.4">
+      <animate attributeName="cy" values="120;130;120" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="300" r="1" fill="#cccccc" opacity="0.4">
+      <animate attributeName="cy" values="300;310;300" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="750" cy="120" r="1" fill="#ffffff" opacity="0.4">
+      <animate attributeName="cy" values="120;130;120" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="300" r="1" fill="#cccccc" opacity="0.4">
+      <animate attributeName="cy" values="300;310;300" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g id="input-section">
+    <rect x="50" y="150" width="180" height="120" rx="8" fill="none" stroke="#ffffff" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="60" y="160" width="160" height="25" fill="url(#inputGradient)" rx="4">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="140" y="177" text-anchor="middle" fill="#000000" font-family="monospace" font-size="13" font-weight="bold">INPUT</text>
+    
+    <text x="140" y="210" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="15">Stefano Francesco</text>
+    <text x="140" y="230" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="15">Monea</text>
+    
+    <g id="tokens">
+      <rect x="60" y="250" width="50" height="8" fill="#ffffff" opacity="0.6" rx="2">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="1s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="120" y="250" width="35" height="8" fill="#cccccc" opacity="0.6" rx="2">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="165" y="250" width="50" height="8" fill="#ffffff" opacity="0.6" rx="2">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+  
+  <g id="input-flow">
+    <circle cx="250" cy="200" r="2" fill="#ffffff" opacity="0.8">
+      <animate attributeName="cx" values="250;300;350" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="270" cy="200" r="1.5" fill="#cccccc" opacity="0.6">
+      <animate attributeName="cx" values="270;320;370" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="290" cy="200" r="2.5" fill="#ffffff" opacity="0.7">
+      <animate attributeName="cx" values="290;340;390" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <g id="llm-architecture">
+    <rect x="300" y="50" width="200" height="280" rx="20" stroke="#ffffff" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    
+    <g id="layers">
+      <rect x="325" y="70" width="150" height="25" fill="#ffffff" opacity="0.8" rx="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+      </rect>
+      <text x="400" y="85" text-anchor="middle" fill="#000000" font-family="monospace" font-size="11">EMBEDDING</text>
+      
+      <g id="transformer-blocks">
+        <rect x="325" y="110" width="150" height="25" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.7" rx="3">
+          <animate attributeName="opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite"/>
+        </rect>
+        <text x="400" y="120" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">ATTENTION</text>
+        <text x="400" y="130" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">LAYER 1</text>
+        
+       <rect x="325" y="150" width="150" height="25" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.7" rx="3">
+          <animate attributeName="opacity" values="0.7;1;0.7" dur="2.2s" repeatCount="indefinite"/>
+        </rect>
+        <text x="400" y="160" text-anchor="middle" fill="#cccccc" font-family="monospace" font-size="10">ATTENTION</text>
+        <text x="400" y="170" text-anchor="middle" fill="#cccccc" font-family="monospace" font-size="10">LAYER 2</text>
+        
+        <rect x="325" y="190" width="150" height="25" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.7" rx="3">
+          <animate attributeName="opacity" values="0.7;1;0.7" dur="2.6s" repeatCount="indefinite"/>
+        </rect>
+        <text x="400" y="200" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">ATTENTION</text>
+        <text x="400" y="210" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="10">LAYER N</text>
+      </g>
+      
+      <g id="ffn">
+        <rect x="325" y="240" width="35" height="40" fill="#ffffff" opacity="0.6" rx="2">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="384" y="240" width="35" height="40" fill="#cccccc" opacity="0.6" rx="2">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="440" y="240" width="35" height="40" fill="#ffffff" opacity="0.6" rx="2">
+          <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+        </rect>
+        <text x="400" y="265" text-anchor="middle" fill="#000000" font-family="monospace" font-size="11">FFN</text>
+      </g>
+      
+      <rect x="325" y="295" width="150" height="20" fill="#cccccc" opacity="0.8" rx="2">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="400" y="309" text-anchor="middle" fill="#000000" font-family="monospace" font-size="10">OUTPUT HEAD</text>
+    </g>
+     
+    <g id="processing">
+      <circle cx="390" cy="30" r="3" fill="#ffffff" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="30" r="3" fill="#ffffff" opacity="0.6">
+        <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="410" cy="30" r="3" fill="#ffffff" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.2;0.4" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+  
+  <g id="output-flow">
+    <circle cx="500" cy="200" r="2" fill="#ffffff" opacity="0.8">
+      <animate attributeName="cx" values="500;520;540" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="510" cy="200" r="1.5" fill="#cccccc" opacity="0.6">
+      <animate attributeName="cx" values="510;530;550" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="200" r="2.5" fill="#ffffff" opacity="0.7">
+      <animate attributeName="cx" values="520;540;560" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <g id="output-section">
+    <rect x="570" y="160" width="180" height="80" rx="8" fill="none" stroke="#ffffff" stroke-width="2" filter="url(#glow)">
+      <animate attributeName="stroke-opacity" values="0.8;1;0.8" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="580" y="170" width="160" height="25" fill="url(#outputGradient)" rx="4">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+    <text x="660" y="187" text-anchor="middle" fill="#000000" font-family="monospace" font-size="12" font-weight="bold">OUTPUT</text>
+    
+    <text x="660" y="215" text-anchor="middle" fill="#ffffff" font-family="monospace" font-size="11">AI and ML student!</text>
+  </g>
+    
+  <g id="specs" fill="#888888" font-family="monospace" font-size="10">
+    <text x="50" y="360">LAYERS: 33</text>
+    <text x="200" y="360">PARAMS: ~33B</text>
+    <text x="350" y="360">CONTEXT: 4096</text>
+    <text x="500" y="360">VOCAB: 77K</text>
+    <text x="650" y="360">PRECISION: FP32</text>
+  </g>
+  
+  <g id="arrows" stroke="#ffffff" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M 230 200 L 300 200" marker-end="url(#arrowhead)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 500 200 L 570 200" marker-end="url(#arrowhead)">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#ffffff"/>
+      </marker>
+    </defs>
+  </g>
+  
+  <text x="400" y="390" text-anchor="middle" fill="#666666" font-family="monospace" font-size="13">
+    STATUS: GETTING DEGREE
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+  </text>
 </svg>
